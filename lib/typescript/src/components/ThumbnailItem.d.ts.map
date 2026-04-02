@@ -1,0 +1,1 @@
+{"version":3,"file":"ThumbnailItem.d.ts","sourceRoot":"","sources":["../../../../src/components/ThumbnailItem.tsx"],"names":[],"mappings":"AACA,OAAO,KAAK,EAAE,mBAAmB,EAAE,MAAM,cAAc,CAAC;AAExD,UAAU,kBAAkB;IAC1B,MAAM,EAAE,mBAAmB,CAAC;IAC5B,UAAU,EAAE,OAAO,CAAC;IACpB,OAAO,EAAE,MAAM,IAAI,CAAC;CACrB;AAED;;GAEG;AACH,eAAO,MAAM,aAAa,GAAI,kCAI3B,kBAAkB,4CAUpB,CAAC"}
