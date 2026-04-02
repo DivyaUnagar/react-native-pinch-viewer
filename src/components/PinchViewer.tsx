@@ -8,7 +8,10 @@ import {
   TouchableOpacity,
   Dimensions,
   FlatList,
+<<<<<<< HEAD
   Platform,
+=======
+>>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582
 } from 'react-native';
 import type { NativeSyntheticEvent, NativeScrollEvent } from 'react-native';
 import Animated, {
@@ -220,7 +223,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     zIndex: 20,
+<<<<<<< HEAD
     marginTop: Platform.OS === 'ios' ? 0 : 30,
+=======
+    marginTop: 30,
+>>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582
   },
   headerText: { color: 'white', fontSize: 16, fontWeight: '600' },
   closeButton: {
@@ -252,11 +259,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.4)',
     marginHorizontal: 4,
   },
+<<<<<<< HEAD
   activeDot: {
     backgroundColor: '#ffffff',
     width: 10,
     height: 10,
     borderRadius: 5,
   },
+=======
+  activeDot: { backgroundColor: '#ffffff', width: 10, height: 10, borderRadius: 5 },
+>>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582
   spacer: { flex: 1 },
 });

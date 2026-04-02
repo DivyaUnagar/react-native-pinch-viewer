@@ -11,11 +11,19 @@
         "!android/build",
         "src/*.ts",
         "src/*.tsx",
+<<<<<<< HEAD
         "react-native-pinch-viewer-example/package.json",
         "react-native-pinch-viewer-example/android",
         "!react-native-pinch-viewer-example/android/.gradle",
         "!react-native-pinch-viewer-example/android/build",
         "!react-native-pinch-viewer-example/android/app/build"
+=======
+        "example/package.json",
+        "example/android",
+        "!example/android/.gradle",
+        "!example/android/build",
+        "!example/android/app/build"
+>>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582
       ],
       "outputs": []
     },
@@ -32,10 +40,17 @@
         "ios",
         "src/*.ts",
         "src/*.tsx",
+<<<<<<< HEAD
         "react-native-pinch-viewer-example/package.json",
         "react-native-pinch-viewer-example/ios",
         "!react-native-pinch-viewer-example/ios/build",
         "!react-native-pinch-viewer-example/ios/Pods"
+=======
+        "example/package.json",
+        "example/ios",
+        "!example/ios/build",
+        "!example/ios/Pods"
+>>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582
       ],
       "outputs": []
     }
