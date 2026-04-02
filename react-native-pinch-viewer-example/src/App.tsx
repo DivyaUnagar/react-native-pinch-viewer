@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import type { ImageSourcePropType } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { PinchViewer } from '@divyaunagar/react-native-pinch-viewer';
+import { PinchViewer } from 'react-native-pinch-viewer';
 
 const { width } = Dimensions.get('window');
 
