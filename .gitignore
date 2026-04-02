@@ -43,10 +43,10 @@ android.iml
 
 # Cocoapods
 #
-example/ios/Pods
+react-native-pinch-viewer-example/ios/Pods
 
 # Ruby
-example/vendor/
+react-native-pinch-viewer-example/vendor/
 
 # node.js
 #
