@@ -1,5 +1,4 @@
 # react-native-pinch-viewer
-<<<<<<< HEAD
 
 A highly customizable, production-ready React Native image gallery and pinch-to-zoom viewer. Built with **React Native Gesture Handler** and **Reanimated** for 60fps performance.
 
@@ -85,6 +84,3 @@ export default function App() {
 ## License
 
 MIT © [Divya Unagar](https://github.com/DivyaUnagar)
-=======
-A customizable React Native pinch-to-zoom image viewer with swipe support.
->>>>>>> 5f4d64406e469ab121320028799b6ccb2df84582

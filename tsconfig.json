@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
@@ -26,5 +27,10 @@
     "strict": true,
     "target": "ESNext",
     "verbatimModuleSyntax": true
+=======
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    // Avoid expo-cli auto-generating a tsconfig
+>>>>>>> 2c7926c69f9eb2eae1d97840d73f4e07a549bffd
   }
 }
