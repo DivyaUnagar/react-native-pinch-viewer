@@ -132,7 +132,6 @@
       }
     }
   },
-
   "jest": {
     "preset": "react-native",
     "modulePathIgnorePatterns": [
@@ -140,7 +139,6 @@
       "<rootDir>/lib/"
     ]
   },
-
   "create-react-native-library": {
     "type": "library",
     "languages": "js",
