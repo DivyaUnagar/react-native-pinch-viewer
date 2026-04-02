@@ -1,17 +1,22 @@
 {
-<<<<<<< HEAD
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-pinch-viewer": ["./src/index"]
+      "react-native-pinch-viewer": [
+        "./src/index"
+      ]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
-    "customConditions": ["react-native-strict-api"],
+    "customConditions": [
+      "react-native-strict-api"
+    ],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react-jsx",
-    "lib": ["ESNext"],
+    "lib": [
+      "ESNext"
+    ],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "noEmit": true,
@@ -27,10 +32,5 @@
     "strict": true,
     "target": "ESNext",
     "verbatimModuleSyntax": true
-=======
-  "extends": "../tsconfig",
-  "compilerOptions": {
-    // Avoid expo-cli auto-generating a tsconfig
->>>>>>> 2c7926c69f9eb2eae1d97840d73f4e07a549bffd
   }
 }
