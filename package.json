@@ -153,6 +153,9 @@
     ],
     "setupFilesAfterEnv": [
       "<rootDir>/jest.setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|@react-native|react-native-reanimated|react-native-gesture-handler|react-native-worklets)/)"
     ]
   },
   "create-react-native-library": {
