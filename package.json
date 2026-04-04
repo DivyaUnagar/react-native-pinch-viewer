@@ -151,6 +151,11 @@
       "<rootDir>/react-native-pinch-viewer-example/node_modules",
       "<rootDir>/lib/"
     ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/test.js",
+      "<rootDir>/react-native-pinch-viewer-example/test.js",
+      "<rootDir>/react-native-pinch-viewer-example/test_gesture.js"
+    ],
     "setupFilesAfterEnv": [
       "<rootDir>/jest.setup.js"
     ],
