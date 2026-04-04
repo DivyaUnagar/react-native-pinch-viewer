@@ -1,11 +1,11 @@
-import type { ImageSourcePropType } from 'react-native';
+import type {ImageSourcePropType} from 'react-native';
 
 /**
  * Ensures the image source is unified to the internal React Native ImageSourcePropType.
  * Supports strings (URIs), objects with URIs, and local number (require).
  */
 export const getSource = (img: any): ImageSourcePropType => {
-  if (typeof img === 'string') return { uri: img };
+  if (typeof img === 'string') return {uri: img};
   if (img && typeof img === 'object' && 'uri' in img) return img;
   return img; // For require() which returns a number (resource id)
 };

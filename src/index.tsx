@@ -6,5 +6,5 @@
  * and high-performance animations for images.
  */
 
-export { PinchViewer } from './components/PinchViewer';
-export type { PinchViewerProps } from './types';
+export {PinchViewer} from './components/PinchViewer';
+export type {PinchViewerProps} from './types';

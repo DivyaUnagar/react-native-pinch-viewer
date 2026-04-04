@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {
   StyleSheet,
   View,
@@ -14,11 +14,11 @@ import Animated, {
   interpolate,
   Extrapolation,
 } from 'react-native-reanimated';
-import { Gesture, GestureDetector } from 'react-native-gesture-handler';
-import { clamp } from '../utils';
-import type { ImageItemProps } from '../types';
+import {Gesture, GestureDetector} from 'react-native-gesture-handler';
+import {clamp} from '../utils';
+import type {ImageItemProps} from '../types';
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+const {width: SCREEN_WIDTH, height: SCREEN_HEIGHT} = Dimensions.get('window');
 
 /**
  * ImageItem component that manages gestures for a single image:
@@ -63,7 +63,7 @@ export const ImageItem = ({
       runOnJS(setIsZooming)(true);
       runOnJS(setIsPinching)(true);
     })
-    .onUpdate((event) => {
+    .onUpdate(event => {
       scale.value = Math.max(0.5, savedScale.value * event.scale);
     })
     .onEnd(() => {
@@ -84,7 +84,7 @@ export const ImageItem = ({
 
   const pan = Gesture.Pan()
     .maxPointers(1)
-    .onUpdate((event) => {
+    .onUpdate(event => {
       if (scale.value > 1) {
         const maxTx = (SCREEN_WIDTH * scale.value - SCREEN_WIDTH) / 2;
         const maxTy = (SCREEN_HEIGHT * scale.value - SCREEN_HEIGHT) / 2;
@@ -152,9 +152,9 @@ export const ImageItem = ({
 
   const animatedStyle = useAnimatedStyle(() => ({
     transform: [
-      { translateX: translateX.value },
-      { translateY: translateY.value },
-      { scale: scale.value },
+      {translateX: translateX.value},
+      {translateY: translateY.value},
+      {scale: scale.value},
     ],
   }));
 
@@ -163,8 +163,7 @@ export const ImageItem = ({
       <GestureDetector gesture={composed}>
         <Animated.View
           style={[styles.imageWrapper, animatedStyle]}
-          pointerEvents="box-none"
-        >
+          pointerEvents="box-none">
           <Image
             source={source}
             style={styles.image}

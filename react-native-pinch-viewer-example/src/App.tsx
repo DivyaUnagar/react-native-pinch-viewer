@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import {
   Text,
   View,
@@ -9,11 +9,11 @@ import {
   ScrollView,
   StatusBar,
 } from 'react-native';
-import type { ImageSourcePropType } from 'react-native';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { PinchViewer } from 'react-native-pinch-viewer';
+import type {ImageSourcePropType} from 'react-native';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {PinchViewer} from 'react-native-pinch-viewer';
 
-const { width } = Dimensions.get('window');
+const {width} = Dimensions.get('window');
 
 // 1. Define your array of images
 const imageArray: ImageSourcePropType[] = [
@@ -56,16 +56,14 @@ export default function App() {
         {/* Gallery Grid */}
         <ScrollView
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={styles.scrollContent}
-        >
+          contentContainerStyle={styles.scrollContent}>
           <View style={styles.grid}>
             {imageArray.map((img, index) => (
               <TouchableOpacity
                 key={index}
                 activeOpacity={0.8}
                 onPress={() => openImage(index)}
-                style={styles.imageCard}
-              >
+                style={styles.imageCard}>
                 <Image
                   source={img}
                   style={styles.thumbnailImage}
@@ -94,7 +92,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: '#000000' },
+  root: {flex: 1, backgroundColor: '#000000'},
   container: {
     flex: 1,
     backgroundColor: '#0A0A0C', // Deep dark aesthetic
@@ -134,7 +132,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     backgroundColor: '#1C1C1E',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 10 },
+    shadowOffset: {width: 0, height: 10},
     shadowOpacity: 0.3,
     shadowRadius: 15,
     elevation: 8,

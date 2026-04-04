@@ -1,10 +1,10 @@
-import type { ImageSourcePropType, ViewStyle, ImageStyle } from 'react-native';
+import type {ImageSourcePropType, ViewStyle, ImageStyle} from 'react-native';
 
 export interface PinchViewerProps {
   /**
    * Array of images to display. Each item can be a URI string, an object with { uri }, or a local require().
    */
-  images: (ImageSourcePropType | { uri: string } | string)[];
+  images: (ImageSourcePropType | {uri: string} | string)[];
 
   /**
    * The initial image index to show.

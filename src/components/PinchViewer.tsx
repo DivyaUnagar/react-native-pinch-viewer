@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import {useState, useEffect, useRef, useCallback} from 'react';
 import {
   StyleSheet,
   View,
@@ -10,20 +10,20 @@ import {
   FlatList,
   Platform,
 } from 'react-native';
-import type { NativeSyntheticEvent, NativeScrollEvent } from 'react-native';
+import type {NativeSyntheticEvent, NativeScrollEvent} from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   runOnJS,
 } from 'react-native-reanimated';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { ImageItem } from './ImageItem';
-import { ThumbnailItem } from './ThumbnailItem';
-import { getSource } from '../utils';
-import type { PinchViewerProps } from '../types';
+import {GestureHandlerRootView} from 'react-native-gesture-handler';
+import {ImageItem} from './ImageItem';
+import {ThumbnailItem} from './ThumbnailItem';
+import {getSource} from '../utils';
+import type {PinchViewerProps} from '../types';
 
-const { width: SCREEN_WIDTH } = Dimensions.get('window');
+const {width: SCREEN_WIDTH} = Dimensions.get('window');
 
 /**
  * PinchViewer: The main professional image gallery component.
@@ -54,7 +54,7 @@ export const PinchViewer = ({
   useEffect(() => {
     if (visible) {
       setCurrentIndex(initialIndex);
-      bgSharedOpacity.value = withTiming(1, { duration: 300 });
+      bgSharedOpacity.value = withTiming(1, {duration: 300});
       setTimeout(() => {
         flatListRef.current?.scrollToIndex({
           index: initialIndex,
@@ -67,12 +67,12 @@ export const PinchViewer = ({
         });
       }, 50);
     } else {
-      bgSharedOpacity.value = withTiming(0, { duration: 200 });
+      bgSharedOpacity.value = withTiming(0, {duration: 200});
     }
   }, [visible, initialIndex, bgSharedOpacity]);
 
   const handleClose = () => {
-    bgSharedOpacity.value = withTiming(0, { duration: 200 }, (isFinished) => {
+    bgSharedOpacity.value = withTiming(0, {duration: 200}, isFinished => {
       if (isFinished) {
         runOnJS(onClose)();
       }
@@ -96,8 +96,9 @@ export const PinchViewer = ({
   );
 
   const bgStyle = useAnimatedStyle(() => ({
-    backgroundColor: `rgba(0, 0, 0, ${bgSharedOpacity.value * backdropOpacity
-      })`,
+    backgroundColor: `rgba(0, 0, 0, ${
+      bgSharedOpacity.value * backdropOpacity
+    })`,
     opacity: bgSharedOpacity.value,
   }));
 
@@ -109,8 +110,7 @@ export const PinchViewer = ({
       transparent={true}
       animationType="none"
       statusBarTranslucent={true}
-      onRequestClose={handleClose}
-    >
+      onRequestClose={handleClose}>
       <GestureHandlerRootView style={[styles.root, containerStyle]}>
         <Animated.View style={[StyleSheet.absoluteFill, bgStyle]} />
 
@@ -131,12 +131,12 @@ export const PinchViewer = ({
               offset: SCREEN_WIDTH * index,
               index,
             })}
-            renderItem={({ item }) => (
+            renderItem={({item}) => (
               <ImageItem
                 source={getSource(item)}
                 enableSwipeDown={enableSwipeDown}
                 onSwipeDownClose={handleClose}
-                setIsZooming={() => { }}
+                setIsZooming={() => {}}
                 resizeMode={imageResizeMode}
               />
             )}
@@ -173,7 +173,7 @@ export const PinchViewer = ({
                   offset: 60 * index,
                   index,
                 })}
-                renderItem={({ item, index }) => (
+                renderItem={({item, index}) => (
                   <ThumbnailItem
                     source={getSource(item)}
                     isSelected={index === currentIndex}
@@ -206,7 +206,7 @@ export const PinchViewer = ({
 };
 
 const styles = StyleSheet.create({
-  root: { flex: 1 },
+  root: {flex: 1},
   overlay: {
     ...StyleSheet.absoluteFillObject,
     zIndex: 10,
@@ -221,7 +221,7 @@ const styles = StyleSheet.create({
     zIndex: 20,
     marginTop: Platform.OS === 'ios' ? 0 : 30,
   },
-  headerText: { color: 'white', fontSize: 16, fontWeight: '600' },
+  headerText: {color: 'white', fontSize: 16, fontWeight: '600'},
   closeButton: {
     width: 40,
     height: 40,
@@ -230,13 +230,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  closeText: { color: 'white', fontSize: 16, fontWeight: 'bold' },
+  closeText: {color: 'white', fontSize: 16, fontWeight: 'bold'},
   footer: {
     height: 80,
     justifyContent: 'center',
     alignItems: 'center',
   },
-  thumbnailList: { paddingHorizontal: 20, paddingVertical: 10, gap: 10 },
+  thumbnailList: {paddingHorizontal: 20, paddingVertical: 10, gap: 10},
   dotsContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -257,5 +257,5 @@ const styles = StyleSheet.create({
     height: 10,
     borderRadius: 5,
   },
-  spacer: { flex: 1 },
+  spacer: {flex: 1},
 });

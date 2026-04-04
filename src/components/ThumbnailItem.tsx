@@ -1,5 +1,5 @@
-import { StyleSheet, TouchableOpacity, Image } from 'react-native';
-import type { ImageSourcePropType } from 'react-native';
+import {StyleSheet, TouchableOpacity, Image} from 'react-native';
+import type {ImageSourcePropType} from 'react-native';
 
 interface ThumbnailItemProps {
   source: ImageSourcePropType;
@@ -19,8 +19,7 @@ export const ThumbnailItem = ({
     <TouchableOpacity
       onPress={onPress}
       activeOpacity={0.7}
-      style={[styles.thumbnailButton, isSelected && styles.thumbnailSelected]}
-    >
+      style={[styles.thumbnailButton, isSelected && styles.thumbnailSelected]}>
       <Image style={styles.thumbnailImage} source={source} resizeMode="cover" />
     </TouchableOpacity>
   );
