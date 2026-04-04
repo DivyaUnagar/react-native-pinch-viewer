@@ -21,6 +21,10 @@ runs:
           ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
           ${{ runner.os }}-yarn-
 
+    - name: Enable Corepack
+      run: corepack enable
+      shell: bash
+
     - name: Install dependencies
       if: steps.yarn-cache.outputs.cache-hit != 'true'
       run: yarn install --immutable
