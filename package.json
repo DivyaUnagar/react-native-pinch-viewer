@@ -1,7 +1,7 @@
 {
   "name": "react-native-pinch-viewer",
   "version": "1.0.0",
-  "description": "A highly customizable React Native pinch-to-zoom viewer built with gesture-handler and reanimated, providing smooth zooming, panning, and high-performance animations for images.",
+  "description": "A high-performance, smooth React Native pinch-to-zoom image viewer and gallery. Built with Reanimated 3 and Gesture Handler for 60fps animations. Supports pinch-to-zoom, panning, swipe-to-close, and thumbnails.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
   "react-native": "src/index.tsx",
@@ -46,16 +46,18 @@
   },
   "keywords": [
     "react-native",
-    "ios",
-    "android",
-    "image",
-    "viewer",
+    "image-viewer",
+    "pinch-to-zoom",
     "gallery",
-    "pinch",
-    "zoom",
     "reanimated",
     "gesture-handler",
-    "expo"
+    "expo",
+    "ios",
+    "android",
+    "lightbox",
+    "carousel",
+    "photo-viewer",
+    "image-zoom"
   ],
   "repository": {
     "type": "git",

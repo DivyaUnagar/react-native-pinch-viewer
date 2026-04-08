@@ -1,21 +1,24 @@
 # react-native-pinch-viewer
 
-A highly customizable, production-ready React Native image gallery and pinch-to-zoom viewer. Built with **React Native Gesture Handler** and **Reanimated** for 60fps performance.
+A high-performance, production-ready **React Native Image Gallery** and **Pinch-to-Zoom** viewer. Built with **React Native Gesture Handler** and **Reanimated 3** for buttery-smooth 60fps performance on both iOS and Android.
+
+Looking for a reliable **React Native Photo Viewer** with **Pinch-to-Zoom** and **Gallery Swiping**? This library provides a seamless, natively-driven experience for handling image interactions.
 
 ![npm version](https://img.shields.io/npm/v/react-native-pinch-viewer)
 ![license](https://img.shields.io/npm/l/react-native-pinch-viewer)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20android-lightgrey)
 
-## Features
+## 🌟 Features
 
-- 🚀 **Performant**: Smooth 60fps animations using Reanimated 3.
-- pinch **Pinch-to-Zoom**: Intuitive pinch gestures to explore image details.
-- hand **Pan & Drag**: Seamless panning when zoomed in.
-- 📱 **Gallery Support**: Built-in horizontal swiping for multiple images.
-- 🖼️ **Thumbnails**: Optional thumbnail gallery for quick navigation.
-- ⬇️ **Swipe-to-Close**: Modern swipe-down-to-dismiss gesture.
-- 🎨 **Customizable**: Control colors, opacities, and UI elements easily.
-- 📦 **Lightweight**: Minimal dependencies and small bundle size.
+- 🚀 **Buttery Smooth 60FPS**: Leverages Reanimated 3 for high-performance, natively-driven animations.
+- 🔍 **Intuitive Pinch-to-Zoom**: Smooth zooming and scaling using standard pinch gestures.
+- 🖐️ **Pan & Drag**: Experience fluid panning when zoomed in to explore image details.
+- 📱 **Integrated Gallery Support**: Built-in horizontal swiping to navigate through multiple images.
+- 🖼️ **Thumbnail Navigation**: Optional thumbnail carousel for quick access to specific images.
+- ⬇️ **Modern Swipe-to-Close**: Intuitive swipe-down gesture to dismiss the viewer.
+- 🎨 **Deeply Customizable**: Easily control colors, opacities, and various UI elements.
+- 📦 **Lightweight & Fast**: Minimal footprint with optimized dependencies.
+- ⚛️ **Expo Support**: Fully compatible with Expo (Managed & Bare workflows).
 
 ## Installation
 
@@ -33,7 +36,15 @@ This package requires `react-native-gesture-handler` and `react-native-reanimate
 npm install react-native-gesture-handler react-native-reanimated
 ```
 
-> **Note**: Don't forget to wrap your app with `<GestureHandlerRootView>`!
+### 🚀 Expo Support
+
+This library is built with standard React Native modules and works perfectly with **Expo**. Ensure you have `react-native-gesture-handler` and `react-native-reanimated` installed in your project.
+
+> **Important**: Ensure your application is wrapped with `<GestureHandlerRootView>` (from `react-native-gesture-handler`) for gestures to work correctly.
+
+## 💡 Why `react-native-pinch-viewer`?
+
+Most React Native image viewers suffer from performance bottlenecks or lack of customization. `react-native-pinch-viewer` was designed from the ground up using **shared values** and **worklets** to ensure all animations run on the UI thread, providing a premium feel that rivals native applications.
 
 ## Usage
 
