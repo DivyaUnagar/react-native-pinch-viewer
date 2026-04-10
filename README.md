@@ -42,6 +42,16 @@ This library is built with standard React Native modules and works perfectly wit
 
 > **Important**: Ensure your application is wrapped with `<GestureHandlerRootView>` (from `react-native-gesture-handler`) for gestures to work correctly.
 
+### 💎 New Architecture Support
+
+`react-native-pinch-viewer` is fully compatible with the **React Native New Architecture** (Fabric & TurboModules).
+
+- **Fabric Ready**: High-performance UI rendering with the new Fabric renderer.
+- **Concurrent React**: Fully supports React 18 features like concurrent rendering and transitions.
+- **TurboModule Compatibility**: Efficient native communication through JSI.
+
+If you are using the New Architecture, everything will work out-of-the-box as this library leverages pure JS logic on top of New Architecture-ready dependencies.
+
 ## 💡 Why `react-native-pinch-viewer`?
 
 Most React Native image viewers suffer from performance bottlenecks or lack of customization. `react-native-pinch-viewer` was designed from the ground up using **shared values** and **worklets** to ensure all animations run on the UI thread, providing a premium feel that rivals native applications.
