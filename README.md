@@ -8,6 +8,8 @@ Looking for a reliable **React Native Photo Viewer** with **Pinch-to-Zoom** and 
 ![license](https://img.shields.io/npm/l/react-native-pinch-viewer)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20android-lightgrey)
 
+[**View on npmjs.com**](https://www.npmjs.com/package/react-native-pinch-viewer)
+
 ## 🌟 Features
 
 - 🚀 **Buttery Smooth 60FPS**: Leverages Reanimated 3 for high-performance, natively-driven animations.

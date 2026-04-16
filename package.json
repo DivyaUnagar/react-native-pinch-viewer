@@ -68,7 +68,7 @@
   "bugs": {
     "url": "https://github.com/DivyaUnagar/react-native-pinch-viewer/issues"
   },
-  "homepage": "https://github.com/DivyaUnagar/react-native-pinch-viewer#readme",
+  "homepage": "https://www.npmjs.com/package/react-native-pinch-viewer",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
