@@ -10,6 +10,21 @@ Looking for a reliable **React Native Photo Viewer** with **Pinch-to-Zoom** and 
 
 [**View on npmjs.com**](https://www.npmjs.com/package/react-native-pinch-viewer)
 
+<br/>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Android</b></td>
+      <td align="center"><b>iOS</b></td>
+    </tr>
+    <tr>
+      <td><img src="https://raw.githubusercontent.com/DivyaUnagar/react-native-pinch-viewer/main/assets/android-demo.gif" width="250" /></td>
+      <td><img src="https://raw.githubusercontent.com/DivyaUnagar/react-native-pinch-viewer/main/assets/ios-demo.gif" width="250" /></td>
+    </tr>
+  </table>
+</div>
+
 ## 🌟 Features
 
 - 🚀 **Buttery Smooth 60FPS**: Leverages Reanimated 3 for high-performance, natively-driven animations.
