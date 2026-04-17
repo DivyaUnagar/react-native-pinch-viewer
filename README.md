@@ -4,11 +4,12 @@ A high-performance, production-ready **React Native Image Gallery** and **Pinch-
 
 Looking for a reliable **React Native Photo Viewer** with **Pinch-to-Zoom** and **Gallery Swiping**? This library provides a seamless, natively-driven experience for handling image interactions.
 
-![npm version](https://img.shields.io/npm/v/react-native-pinch-viewer)
+[![npm version](https://img.shields.io/npm/v/react-native-pinch-viewer)](https://www.npmjs.com/package/react-native-pinch-viewer)
+[![npm downloads](https://img.shields.io/npm/dm/react-native-pinch-viewer)](https://www.npmjs.com/package/react-native-pinch-viewer)
 ![license](https://img.shields.io/npm/l/react-native-pinch-viewer)
 ![platform](https://img.shields.io/badge/platform-ios%20%7C%20android-lightgrey)
 
-[**View on npmjs.com**](https://www.npmjs.com/package/react-native-pinch-viewer)
+**Find this package on NPM:** [react-native-pinch-viewer](https://www.npmjs.com/package/react-native-pinch-viewer)
 
 <br/>
 
